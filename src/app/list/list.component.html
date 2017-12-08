@@ -1,0 +1,13 @@
+<div class="component-container">
+  <fieldset>
+      <legend>Child Component</legend>
+      <h2>{{componentName}} List</h2>
+      <div *ngIf="list.length">
+          <ul>
+              <li *ngFor="let listItem of list">{{listItem}} - <a href="javascript: void(0)" (click)="deleteItem(listItem)">Delete</a></li>
+          </ul>
+          <h2>Total: {{list.length}}</h2>
+      </div>
+      <p *ngIf="!(list.length)">List contents are empty</p>
+  </fieldset>
+</div>

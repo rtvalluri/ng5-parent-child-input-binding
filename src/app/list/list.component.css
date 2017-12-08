@@ -1,0 +1,10 @@
+.component-container {
+    width: 300px;
+    margin: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+.component-container ul li {
+    padding: 5px;
+}
